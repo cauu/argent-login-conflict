@@ -10,7 +10,7 @@ import './index.css'
 
 const routerConfig = [
   {
-    path: '/signin',
+    path: '/',
     async lazy() {
       const SignInPage = await import(/* webpackChunkName: "signin" */ './App.tsx');
       return { Component: SignInPage.default };
